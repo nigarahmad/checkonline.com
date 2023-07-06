@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="http://www.example.org/register"> 
+        <label for="username">Create a username: </l abel> 
+        <input type="text" i d="username" onbl ur="checkUsername()" /> 
+        <div id="feedback"></div> 
+        <label for="password">Create a password: </label> 
+        <input type="password" id="password" /> 
+        <input type="submit" value="Sign up!" /> 
+        </ fonn> 
+        <script>
+                        function checkUsername() { 
+            var elMsg = document .getElementByid('feedback') ; 
+            var elUsername = document .getElementByld('username ');
+            if (elUsername .value .length < 5) { 
+            elMsg.textContent =' Username must be 5 characters or more'; }
+            else { 
+            elMsg.textContent = '';
+                }}    
+         </script>
+</body>
+</html>
